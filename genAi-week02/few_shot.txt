@@ -1,0 +1,6 @@
+Example:
+Input: John is a Python developer
+Output: {"name": "John", "skills": ["Python"]}
+
+Now extract:
+Input: {input}

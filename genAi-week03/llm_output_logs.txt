@@ -1,0 +1,303 @@
+2026-04-06 11:06:53,367 - INFO - Prompt: You are a strict JSON generator.
+
+Extract structured data from the text.
+
+Rules:
+- Output ONLY valid JSON
+- No explanation
+- No extra text
+- If missing → null or []
+
+Schema:
+{
+  "name": "string",
+  "skills": ["string"],
+  "experience_years": number
+}
+
+Input: Rahul is a backend developer skilled in Node.js and MongoDB with 2 years experience.
+
+Output:
+2026-04-06 11:06:53,786 - INFO - HTTP Request: GET https://huggingface.co/api/models/meta-llama/Llama-3.3-70B-Instruct?expand=inferenceProviderMapping "HTTP/1.1 200 OK"
+2026-04-06 11:06:54,438 - INFO - HTTP Request: POST https://router.huggingface.co/groq/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 11:06:54,438 - INFO - Raw output: {"name": "Rahul", "skills": ["Node.js", "MongoDB"], "experience_years": 2}
+2026-04-06 11:06:54,438 - ERROR - Error: 'LLMWrapper' object has no attribute '_enforce_json'
+2026-04-06 11:06:56,443 - INFO - Prompt: You are a strict JSON generator.
+
+Extract structured data from the text.
+
+Rules:
+- Output ONLY valid JSON
+- No explanation
+- No extra text
+- If missing → null or []
+
+Schema:
+{
+  "name": "string",
+  "skills": ["string"],
+  "experience_years": number
+}
+
+Input: Rahul is a backend developer skilled in Node.js and MongoDB with 2 years experience.
+
+Output:
+2026-04-06 11:06:57,089 - INFO - HTTP Request: POST https://router.huggingface.co/groq/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 11:06:57,090 - INFO - Raw output: {"name": "Rahul", "skills": ["Node.js", "MongoDB"], "experience_years": 2}
+2026-04-06 11:06:57,090 - ERROR - Error: 'LLMWrapper' object has no attribute '_enforce_json'
+2026-04-06 11:07:01,095 - INFO - Prompt: You are a strict JSON generator.
+
+Extract structured data from the text.
+
+Rules:
+- Output ONLY valid JSON
+- No explanation
+- No extra text
+- If missing → null or []
+
+Schema:
+{
+  "name": "string",
+  "skills": ["string"],
+  "experience_years": number
+}
+
+Input: Rahul is a backend developer skilled in Node.js and MongoDB with 2 years experience.
+
+Output:
+2026-04-06 11:07:01,780 - INFO - HTTP Request: POST https://router.huggingface.co/groq/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 11:07:01,782 - INFO - Raw output: {
+  "name": "Rahul",
+  "skills": ["Node.js", "MongoDB"],
+  "experience_years": 2
+}
+2026-04-06 11:07:01,782 - ERROR - Error: 'LLMWrapper' object has no attribute '_enforce_json'
+2026-04-06 11:07:01,782 - INFO - Prompt: You are a strict JSON generator.
+
+Extract structured data from the text.
+
+Rules:
+- Output ONLY valid JSON
+- No explanation
+- No extra text
+- If missing → null or []
+
+Schema:
+{
+  "name": "string",
+  "skills": ["string"],
+  "experience_years": number
+}
+
+Input: Priya is a frontend engineer using React.
+
+Output:
+2026-04-06 11:07:02,345 - INFO - HTTP Request: POST https://router.huggingface.co/groq/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 11:07:02,348 - INFO - Raw output: {
+  "name": "Priya",
+  "skills": ["React"],
+  "experience_years": null
+}
+2026-04-06 11:07:02,348 - ERROR - Error: 'LLMWrapper' object has no attribute '_enforce_json'
+2026-04-06 11:07:04,353 - INFO - Prompt: You are a strict JSON generator.
+
+Extract structured data from the text.
+
+Rules:
+- Output ONLY valid JSON
+- No explanation
+- No extra text
+- If missing → null or []
+
+Schema:
+{
+  "name": "string",
+  "skills": ["string"],
+  "experience_years": number
+}
+
+Input: Priya is a frontend engineer using React.
+
+Output:
+2026-04-06 11:07:05,015 - INFO - HTTP Request: POST https://router.huggingface.co/groq/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 11:07:05,017 - INFO - Raw output: {
+  "name": "Priya",
+  "skills": ["React"],
+  "experience_years": null
+}
+2026-04-06 11:07:05,018 - ERROR - Error: 'LLMWrapper' object has no attribute '_enforce_json'
+2026-04-06 11:07:09,023 - INFO - Prompt: You are a strict JSON generator.
+
+Extract structured data from the text.
+
+Rules:
+- Output ONLY valid JSON
+- No explanation
+- No extra text
+- If missing → null or []
+
+Schema:
+{
+  "name": "string",
+  "skills": ["string"],
+  "experience_years": number
+}
+
+Input: Priya is a frontend engineer using React.
+
+Output:
+2026-04-06 11:07:09,690 - INFO - HTTP Request: POST https://router.huggingface.co/groq/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 11:07:09,693 - INFO - Raw output: {
+  "name": "Priya",
+  "skills": ["React"],
+  "experience_years": null
+}
+2026-04-06 11:07:09,693 - ERROR - Error: 'LLMWrapper' object has no attribute '_enforce_json'
+2026-04-06 11:07:09,693 - INFO - Prompt: You are a strict JSON generator.
+
+Extract structured data from the text.
+
+Rules:
+- Output ONLY valid JSON
+- No explanation
+- No extra text
+- If missing → null or []
+
+Schema:
+{
+  "name": "string",
+  "skills": ["string"],
+  "experience_years": number
+}
+
+Input: Amit works in HR.
+
+Output:
+2026-04-06 11:07:10,115 - INFO - HTTP Request: POST https://router.huggingface.co/groq/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 11:07:10,117 - INFO - Raw output: {
+  "name": "Amit",
+  "skills": [],
+  "experience_years": null
+}
+2026-04-06 11:07:10,117 - ERROR - Error: 'LLMWrapper' object has no attribute '_enforce_json'
+2026-04-06 11:07:12,120 - INFO - Prompt: You are a strict JSON generator.
+
+Extract structured data from the text.
+
+Rules:
+- Output ONLY valid JSON
+- No explanation
+- No extra text
+- If missing → null or []
+
+Schema:
+{
+  "name": "string",
+  "skills": ["string"],
+  "experience_years": number
+}
+
+Input: Amit works in HR.
+
+Output:
+2026-04-06 11:07:12,665 - INFO - HTTP Request: POST https://router.huggingface.co/groq/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 11:07:12,668 - INFO - Raw output: {"name": "Amit", "skills": [], "experience_years": null}
+2026-04-06 11:07:12,668 - ERROR - Error: 'LLMWrapper' object has no attribute '_enforce_json'
+2026-04-06 11:07:16,674 - INFO - Prompt: You are a strict JSON generator.
+
+Extract structured data from the text.
+
+Rules:
+- Output ONLY valid JSON
+- No explanation
+- No extra text
+- If missing → null or []
+
+Schema:
+{
+  "name": "string",
+  "skills": ["string"],
+  "experience_years": number
+}
+
+Input: Amit works in HR.
+
+Output:
+2026-04-06 11:07:17,195 - INFO - HTTP Request: POST https://router.huggingface.co/groq/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 11:07:17,197 - INFO - Raw output: {"name": "Amit", "skills": [], "experience_years": null}
+2026-04-06 11:07:17,197 - ERROR - Error: 'LLMWrapper' object has no attribute '_enforce_json'
+2026-04-06 11:08:29,057 - INFO - Prompt: You are a strict JSON generator.
+
+Extract structured data from the text.
+
+Rules:
+- Output ONLY valid JSON
+- No explanation
+- No extra text
+- If missing → null or []
+
+Schema:
+{
+  "name": "string",
+  "skills": ["string"],
+  "experience_years": number
+}
+
+Input: Rahul is a backend developer skilled in Node.js and MongoDB with 2 years experience.
+
+Output:
+2026-04-06 11:08:29,405 - INFO - HTTP Request: GET https://huggingface.co/api/models/meta-llama/Llama-3.3-70B-Instruct?expand=inferenceProviderMapping "HTTP/1.1 200 OK"
+2026-04-06 11:08:30,038 - INFO - HTTP Request: POST https://router.huggingface.co/groq/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 11:08:30,039 - INFO - Raw output: {
+  "name": "Rahul",
+  "skills": ["Node.js", "MongoDB"],
+  "experience_years": 2
+}
+2026-04-06 11:08:30,039 - INFO - Prompt: You are a strict JSON generator.
+
+Extract structured data from the text.
+
+Rules:
+- Output ONLY valid JSON
+- No explanation
+- No extra text
+- If missing → null or []
+
+Schema:
+{
+  "name": "string",
+  "skills": ["string"],
+  "experience_years": number
+}
+
+Input: Priya is a frontend engineer using React.
+
+Output:
+2026-04-06 11:08:30,474 - INFO - HTTP Request: POST https://router.huggingface.co/groq/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 11:08:30,476 - INFO - Raw output: {"name": "Priya", "skills": ["React"], "experience_years": null}
+2026-04-06 11:08:30,477 - INFO - Prompt: You are a strict JSON generator.
+
+Extract structured data from the text.
+
+Rules:
+- Output ONLY valid JSON
+- No explanation
+- No extra text
+- If missing → null or []
+
+Schema:
+{
+  "name": "string",
+  "skills": ["string"],
+  "experience_years": number
+}
+
+Input: Amit works in HR.
+
+Output:
+2026-04-06 11:08:30,975 - INFO - HTTP Request: POST https://router.huggingface.co/groq/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-06 11:08:30,978 - INFO - Raw output: {
+  "name": "Amit",
+  "skills": [],
+  "experience_years": null
+}

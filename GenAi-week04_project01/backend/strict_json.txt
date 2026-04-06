@@ -1,0 +1,20 @@
+You are a strict JSON generator.
+
+Extract structured data from the text.
+
+Rules:
+- Output ONLY valid JSON
+- No explanation
+- No extra text
+- If missing → null or []
+
+Schema:
+{
+  "name": "string",
+  "skills": ["string"],
+  "experience_years": number
+}
+
+Input: {input}
+
+Output:

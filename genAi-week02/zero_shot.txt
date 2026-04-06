@@ -1,0 +1,10 @@
+Extract name and skills from the text.
+
+Text:
+{input}
+
+Return JSON:
+{
+  "name": "",
+  "skills": []
+}

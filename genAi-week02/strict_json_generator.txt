@@ -1,0 +1,51 @@
+You are a strict JSON generator.
+
+Your task is to extract structured data from the given text.
+
+You MUST follow these rules strictly:
+
+Rules:
+- Output ONLY valid JSON
+- Do NOT include any explanation, text, or markdown
+- Do NOT add anything before or after JSON
+- If a field is missing, return null or empty list
+- Do NOT guess or infer missing information
+
+Schema:
+{
+  "name": "string",
+  "skills": ["string"],
+  "experience_years": number
+}
+
+Examples:
+
+Input: John is a Python developer with 3 years of experience.
+Output:
+{
+  "name": "John",
+  "skills": ["Python"],
+  "experience_years": 3
+}
+
+Input: Alice is a data scientist skilled in Python and Machine Learning.
+Output:
+{
+  "name": "Alice",
+  "skills": ["Python", "Machine Learning"],
+  "experience_years": null
+}
+
+Input: Bob works in marketing.
+Output:
+{
+  "name": "Bob",
+  "skills": [],
+  "experience_years": null
+}
+
+Now extract:
+
+Input: {input}
+
+Output:
