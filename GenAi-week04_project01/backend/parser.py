@@ -12,11 +12,16 @@ class ResumeParser:
             self.template = f.read()
 
     def parse(self, text):
-        prompt = self.template.replace("{input}", text[:3000])
+        print("Inside parser")
+
+        prompt = self.template.replace("{input}", text[:1000])
 
         for attempt in range(3):
+            print(f"Attempt {attempt+1} - calling LLM")
 
             output = self.llm.generate(prompt, enforce_json=True)
+
+            print("LLM OUTPUT:", output)
 
             if output in ["FAILED", "INVALID_JSON"]:
                 continue
@@ -24,16 +29,17 @@ class ResumeParser:
             is_valid, error, data = validate_schema(output)
 
             if is_valid:
-                return data   # ✅ return CLEAN JSON
+                print("VALID JSON FOUND")
+                return data
 
-            # 🔥 FEEDBACK LOOP (VERY IMPORTANT)
             prompt = prompt + f"""
+Previous output:
+{output}
 
-The previous output was invalid due to:
+Error:
 {error}
 
-Fix the JSON strictly.
-Return ONLY valid JSON.
+Fix the JSON.
 """
 
         return {"error": "PARSING FAILED"}

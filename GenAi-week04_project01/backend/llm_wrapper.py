@@ -27,8 +27,8 @@ class LLMWrapper:
             provider="groq",
             huggingfacehub_api_token=api_token,
             timeout=30,
-            temperature=0.3,          # ✅ control randomness
-            max_new_tokens=500        # ✅ control length
+            temperature=0.2,          # ✅ control randomness
+            max_new_tokens=200        # ✅ control length
         )
 
         self.model = ChatHuggingFace(llm=self.llm)
@@ -45,7 +45,9 @@ class LLMWrapper:
             try:
                 logging.info(f"Attempt {attempt+1}")
 
+                print("LLM CALL START")
                 result = self.model.invoke(prompt)
+                print("LLM CALL END")
                 output = result.content.strip()
 
                 logging.info(f"Raw output: {output[:500]}")  # ✅ limit log size
