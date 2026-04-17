@@ -1,10 +1,10 @@
-# 🚀 GenAI Resume Parser (Full Stack)
+#  GenAI Resume Parser (Full Stack)
 
 This project is a production-style GenAI application that extracts structured data from a resume PDF and returns validated JSON output via both CLI and a Streamlit UI.
 
 ---
 
-## 🔥 Features
+##  Features
 
 - Upload Resume PDF via UI (Streamlit)
 - LLM-powered parsing (Llama 3 via Hugging Face + Groq)
@@ -16,13 +16,13 @@ This project is a production-style GenAI application that extracts structured da
 
 ---
 
-## 🧠 How It Works
+##  How It Works
 
 PDF → Text Extraction → LLM → JSON → Validation → Retry → Final Output
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 genai-resume-parser/
 
@@ -48,9 +48,9 @@ genai-resume-parser/
 
 ---
 
-## ⚙️ Setup Instructions
+##  Setup Instructions
 
-### 1️⃣ Create Virtual Environment
+### 1 Create Virtual Environment
 
 ```bash
 python3.10 -m venv venv
@@ -58,7 +58,7 @@ python3.10 -m venv venv
 
 ---
 
-### 2️⃣ Activate Environment
+### 2 Activate Environment
 
 **Mac/Linux**
 ```bash
@@ -72,7 +72,7 @@ venv\Scripts\activate
 
 ---
 
-### 3️⃣ Install Dependencies
+### 3 Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -80,7 +80,7 @@ pip install -r requirements.txt
 
 ---
 
-### 4️⃣ Add Hugging Face API Key
+### 4 Add Hugging Face API Key
 
 Create a `.env` file:
 
@@ -93,7 +93,7 @@ https://huggingface.co/settings/tokens
 
 ---
 
-### 5️⃣ Add Your Resume
+### 5 Add Your Resume
 
 Replace:
 
@@ -105,7 +105,7 @@ with your own resume file.
 
 ---
 
-## ▶️ Run the Project
+## Run the Project
 
 ### Backend (CLI Test)
 
@@ -123,7 +123,7 @@ streamlit run frontend/app.py
 
 ---
 
-## 🖥 UI Features
+##  UI Features
 
 - Upload PDF  
 - Click **Parse Resume**  
@@ -132,7 +132,7 @@ streamlit run frontend/app.py
 
 ---
 
-## ✅ Example Output
+## Example Output
 
 ```json
 {
@@ -144,7 +144,7 @@ streamlit run frontend/app.py
 
 ---
 
-## 🧠 Key Learnings
+##  Key Learnings
 
 - Controlling LLM outputs
 - Handling API failures and retries
@@ -154,7 +154,7 @@ streamlit run frontend/app.py
 
 ---
 
-## ⚠️ Known Limitations
+##  Known Limitations
 
 - PDF extraction may be messy for complex layouts
 - LLM may hallucinate occasionally
@@ -162,7 +162,7 @@ streamlit run frontend/app.py
 
 ---
 
-## 🚀 Future Improvements
+##  Future Improvements
 
 - Add chunking for large documents
 - Use embeddings + RAG
@@ -172,7 +172,7 @@ streamlit run frontend/app.py
 
 ---
 
-## 🧑‍💻 Tech Stack
+##  Tech Stack
 
 - Python  
 - LangChain  
@@ -183,6 +183,6 @@ streamlit run frontend/app.py
 
 ---
 
-## 📌 Author
+##  Author
 
-Built as part of a structured GenAI engineering journey 🚀
+Built as part of a structured GenAI engineering journey 
