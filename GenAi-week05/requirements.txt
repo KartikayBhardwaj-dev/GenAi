@@ -1,0 +1,7 @@
+ 
+langchain-core 
+langchain-huggingface 
+python-dotenv
+langchain==0.1.16 
+langchain-groq
+langchain-community
