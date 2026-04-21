@@ -1,0 +1,25 @@
+Extract structured data from the text.
+
+Return ONLY valid JSON.
+
+Rules:
+- No markdown (no ```json)
+- No explanation
+- No thinking
+- Use double quotes
+- If a field is not present: 
+  - For strings use null
+  - For numbers use null
+  - For arrays use []
+
+Example Output:
+{{
+  "name": "Rahul Sharma",
+  "experience_years": 2,
+  "tech_stack": ["Python", "FastAPI"],
+  "role": "Backend Developer"
+}}
+
+Text: {input}
+
+Feedback: {feedback}
