@@ -7,7 +7,7 @@ from langchain_core.prompts import PromptTemplate
 from langchain_core.runnables import RunnableLambda
 from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
 
-from validators.validator import validate_and_clean
+from backend.utils.validator import validate_and_clean
 
 load_dotenv()
 
@@ -79,7 +79,7 @@ def validate_step(text: str):
 validator = RunnableLambda(validate_step)
 
 # ------------------ CHAIN ------------------
-chain = prompt | model | cleaner | validator
+extract_chain = prompt | model | cleaner | validator
 
 # ------------------ RETRY LOGIC ------------------
 def run_with_retry(chain, input_text, max_retries=3):
@@ -125,19 +125,19 @@ Return ONLY valid JSON.
         "error": f"Failed after {max_retries} attempts: {last_error}"
     }
 
-# ------------------ TEST ------------------
-if __name__ == "__main__":
-    text = """
-    Rahul Sharma is a backend developer.
+# # ------------------ TEST ------------------
+# if __name__ == "__main__":
+#     text = """
+#     Rahul Sharma is a backend developer.
 
-    He has worked with:
-    - Python
-    - FastAPI
-    - MongoDB
+#     He has worked with:
+#     - Python
+#     - FastAPI
+#     - MongoDB
 
-    He has around 2 years of experience.
-    """
+#     He has around 2 years of experience.
+#     """
 
-    result = run_with_retry(chain, text)
+#     result = run_with_retry(chain, text)
 
-    print(result)
+#     print(result)

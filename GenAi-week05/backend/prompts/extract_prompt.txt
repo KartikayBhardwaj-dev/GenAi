@@ -7,10 +7,42 @@ Rules:
 - No explanation
 - No thinking
 - Use double quotes
-- If a field is not present: 
-  - For strings use null
-  - For numbers use null
-  - For arrays use []
+- Follow the exact schema
+
+Field rules:
+- name:
+  → Extract full name of the person
+  → If not found, return null
+
+- experience_years:
+  → If explicitly mentioned, use it
+  → Otherwise, infer from work experience date ranges
+  → Calculate approximate total experience in years
+  → Round to nearest integer
+  → If cannot infer, return null
+
+- tech_stack:
+  → Extract programming languages, frameworks, tools, and technologies
+  → Remove duplicates
+  → Return as array of strings
+  → If none found, return []
+
+- role:
+  → Extract most recent or most relevant job title from work experience
+  → If not found, return null
+
+Missing values:
+- For strings → null
+- For numbers → null
+- For arrays → []
+
+Schema:
+{{
+  "name": string | null,
+  "experience_years": number | null,
+  "tech_stack": string[],
+  "role": string | null
+}}
 
 Example Output:
 {{
