@@ -2,33 +2,26 @@
 __pycache__/
 *.pyc
 
-# Virtual Environment
+# Mac
+.DS_Store
+
+# Env
 .venv/
 venv/
-
-# Environment Variables
 .env
 
 # Logs
-logs/
 *.log
+logs/
 
-# Vector Databases
+# Vector DB
 chroma_db/
-faiss_index/
+*.bin
+*.sqlite3
+
+# PDFs / data
+data/
+*.pdf
 
 # Streamlit
 .streamlit/
-
-# OS Files
-.DS_Store
-
-# Jupyter
-.ipynb_checkpoints/
-
-# PDFs / Uploaded Files
-data/
-uploads/
-
-# Torch / HF Cache
-.cache/
