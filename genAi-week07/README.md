@@ -1,4 +1,4 @@
-# 🧠 Week 3 — Embeddings + Vector Databases + Retrieval
+# 🧠 Week 7 — Embeddings + Vector Databases + Retrieval
 
 This week focused on understanding how modern RAG (Retrieval-Augmented Generation) systems work internally using embeddings, vector databases, and similarity search.
 
@@ -199,7 +199,7 @@ Stored and reloaded embeddings persistently.
 
 # 🧠 Core Takeaways
 
-By the end of Week 3, understood:
+By the end of Week 7, understood:
 
 - how semantic search works
 - why embeddings are foundational to modern AI systems
