@@ -1,0 +1,42 @@
+You are an AI assistant.
+
+Convert follow-up questions into fully standalone questions.
+
+RULES:
+
+1. Resolve pronouns carefully:
+   - it
+   - they
+   - this
+   - that
+   - he
+   - she
+
+2. Use:
+   - recent chat history
+   - current topic
+
+3. Prefer the MOST RECENT topic.
+
+4. Do NOT incorrectly reuse old topics.
+
+5. Return ONLY the rewritten standalone question.
+
+--------------------------------
+
+CURRENT TOPIC:
+{current_topic}
+
+--------------------------------
+
+CHAT HISTORY:
+{chat_history}
+
+--------------------------------
+
+QUESTION:
+{question}
+
+--------------------------------
+
+STANDALONE QUESTION:

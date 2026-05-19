@@ -1,0 +1,43 @@
+# ------------------ LANGCHAIN ------------------
+langchain==0.2.16
+langchain-core==0.2.43
+langchain-community==0.2.16
+langchain-text-splitters==0.2.4
+langchain-groq==0.1.9
+langchain-huggingface==0.0.3
+
+# ------------------ LLM ------------------
+groq==0.9.0
+httpx==0.27.0
+
+# ------------------ EMBEDDINGS ------------------
+sentence-transformers==3.0.1
+transformers==4.43.4
+tokenizers==0.19.1
+
+# ------------------ VECTOR STORE ------------------
+faiss-cpu==1.8.0.post1
+
+# ------------------ PDF ------------------
+pypdf==4.3.1
+
+# ------------------ FRONTEND ------------------
+streamlit==1.38.0
+
+# ------------------ ENV ------------------
+python-dotenv==1.0.1
+
+# ------------------ VALIDATION ------------------
+pydantic==2.8.2
+
+# ------------------ UTILITIES ------------------
+numpy==1.26.4
+pandas==2.2.2
+requests==2.32.3
+
+# ------------------ TOKENIZATION ------------------
+tiktoken==0.7.0
+
+# ------------------ OPTIONAL PERFORMANCE ------------------
+accelerate==0.33.0
+safetensors==0.4.4

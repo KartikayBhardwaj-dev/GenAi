@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+
+# Mac
+.DS_Store
+
+# Env
+.venv/
+venv/
+.env
+
+# Logs
+*.log
+logs/
+
+# Vector DB
+chroma_db/
+*.bin
+*.sqlite3
+
+# PDFs / data
+data/
+*.pdf
+
+# Streamlit
+.streamlit/

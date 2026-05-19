@@ -1,0 +1,10 @@
+Given the conversation history and latest user question,
+convert the latest question into a standalone question.
+
+Chat History:
+{chat_history}
+
+Latest Question:
+{question}
+
+Standalone Question:

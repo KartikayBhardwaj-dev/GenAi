@@ -1,0 +1,9 @@
+Progressively summarize the conversation.
+
+Current Summary:
+{summary}
+
+New Conversation:
+Human: {new_lines}
+
+Updated Summary:
